@@ -7,12 +7,12 @@ export default function ProductCard({ product }: { product: any }) {
   return (
     <div className="group relative border rounded-lg overflow-hidden bg-white hover:shadow-lg transition-shadow">
       <div className="aspect-square bg-gray-100 relative">
-         {/* Placeholder for real image */}
-         <img 
-            src={product.images[0] || "https://placehold.co/400"} 
-            alt={product.name} 
-            className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300"
-         />
+        {/* Placeholder for real image */}
+        <img
+          src={product.images[0] || "https://placehold.co/400"}
+          alt={product.name}
+          className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300"
+        />
       </div>
       <div className="p-4">
         <h3 className="text-lg font-semibold text-gray-900 truncate">{product.name}</h3>

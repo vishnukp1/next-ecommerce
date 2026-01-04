@@ -31,13 +31,13 @@ export default function Navbar() {
               </span>
             )}
           </Link>
-          
+
           {/* Auth Section */}
           {session ? (
-             <div className="flex gap-4 items-center">
-                <span className="text-sm font-medium">{session.user?.name}</span>
-                <button onClick={() => signOut()} className="text-sm text-red-500">Logout</button>
-             </div>
+            <div className="flex gap-4 items-center">
+              <span className="text-sm font-medium">{session.user?.name}</span>
+              <button onClick={() => signOut()} className="text-sm text-red-500">Logout</button>
+            </div>
           ) : (
             <Link href="/login" className="flex items-center gap-2 text-sm font-medium text-gray-700 hover:text-black">
               <User size={20} /> Login
